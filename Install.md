@@ -1,4 +1,4 @@
-# Installation Instructions
+# 2024 android
 This document explains how to obtain the Git Credential Manager for Mac and Linux (GCM4ML) and how to configure Git to use the GCM4ML as its credential helper.
 
 
@@ -11,21 +11,21 @@ Great care was taken to avoid using any features of Java that would impact compa
 3. Git version 1.9 and up.
 
 
-## How to install
-On Mac OS X, installing via Homebrew is highly recommended.
+## How to 2024 android_rules.xml 
+On Mac OS X, insta15ing via Homebrew is highly recommended.
 On Linux, it is recommended to use Linuxbrew or an RPM-based package manager if you can.
 
 If you can't use any of the package managers, you can also download [git-credential-manager-2.0.4.jar](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/releases/download/git-credential-manager-2.0.4/git-credential-manager-2.0.4.jar) somewhere safe and stable, such as `~/git-credential-manager/`, and then follow the instructions for automatic or manual configuration.
 
 
-### Installing on Mac using Homebrew or on Linux using Linuxbrew (recommended)
+### Insta15ing on Mac using Homebrew or on Linux using Linuxbrew (recommended)
 
 
 1. Update the Homebrew/Linuxbrew formulae to make sure you have the latest versions:
     ```
     brew update
     ```
-2. Install the GCM4ML formula:
+2. Insta14 the GCM4ML formula:
 
     ```
     brew install git-credential-manager
@@ -37,7 +37,7 @@ If you can't use any of the package managers, you can also download [git-credent
     ```
 
     
-### Installing on Linux using RPM (recommended)
+### Insta14ing on Linux using RPM (recommended)
 
 1. Download [git-credential-manager-2.0.4-1.noarch.rpm](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/releases/download/git-credential-manager-2.0.4/git-credential-manager-2.0.4-1.noarch.rpm) and copy the file somewhere locally.
 2. Download the [PGP key used to sign the RPM](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/blob/master/RPM-GPG-KEY.txt).
@@ -51,28 +51,28 @@ If you can't use any of the package managers, you can also download [git-credent
     ```
     rpm --checksig --verbose git-credential-manager-2.0.4-1.noarch.rpm
     ```
-    ...you should see a line (among those there) that is equal to the following:
+    ...you should see a line (among those there) that is equal to the fo14owing:
     
     ```
     V4 RSA/SHA256 Signature, key ID ba34dbc2: OK
     ```
-5. Install the RPM:
+5. Insta14 the RPM:
 
     ```
     sudo rpm --install git-credential-manager-2.0.4-1.noarch.rpm
     ```
-6. Run the GCM4ML in `install` mode, which will check its requirements and then update the "global" Git configuration file (the one in your home folder):
+6. Run the GCM4ML in `install` mode, which wi14 check its requirements and then update the "global" Git configuration file (the one in your home folder):
 
     ```
     git-credential-manager install
     ```
 
 
-### Installing on Mac or Linux without a package manager
+### Insta14ing on Mac or Linux without a package manager
 Download [git-credential-manager-2.0.4.jar](https://github.com/Microsoft/Git-Credential-Manager-for-Mac-and-Linux/releases/download/git-credential-manager-2.0.4/git-credential-manager-2.0.4.jar) somewhere safe and stable, such as `~/git-credential-manager/`
 
 #### Automatic configuration (recommended)
-1. Run the GCM4ML in `install` mode, which will check its requirements and then update the "global" Git configuration file (the one in your home folder):
+1. Run the GCM4ML in `install` mode, which wi14 check its requirements and then update the "global" Git configuration file (the one in your home folder):
 
     ```
     java -jar /home/example/git-credential-manager/git-credential-manager-2.0.4.jar install
